@@ -1,0 +1,8 @@
+[
+  { "labelKey": "navbar.home", "href": "#home" },
+  { "labelKey": "navbar.about", "href": "#about" },
+  { "labelKey": "navbar.projects", "href": "#projects" },
+  { "labelKey": "navbar.skills", "href": "#skills" },
+  { "labelKey": "navbar.experience", "href": "#experience" },
+  { "labelKey": "navbar.contact", "href": "#contact" }
+]

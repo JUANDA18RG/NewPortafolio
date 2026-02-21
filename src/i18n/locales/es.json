@@ -1,0 +1,76 @@
+{
+  "navbar": {
+    "home": "🏠 Inicio",
+    "about": "🙋‍♂️ Sobre mí",
+    "projects": "🚀 Proyectos",
+    "skills": "⚡ Habilidades",
+    "experience": "💼 Experiencia",
+    "contact": "📬 Contacto"
+  },
+  "hero": {
+    "greeting": "👋 Bienvenido a mi portafolio",
+    "subtitle": "🚀 Ingeniero de Software · Apasionado por crear experiencias digitales únicas y memorables.",
+    "cta_projects": "Ver proyectos",
+    "cta_contact": "Contáctame",
+    "marquee": "✨ · Juan David Ramírez · Ingeniero de Software · Apasionado por la tecnología 🚀"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Soy un desarrollador de software apasionado por construir productos que impacten a las personas. Me especializo en desarrollo web full-stack con React, Node.js y TypeScript.",
+    "values_title": "Lo que me define",
+    "value_1": "Código limpio y escalable",
+    "value_2": "Aprendizaje continuo",
+    "value_3": "Colaboración y trabajo en equipo",
+    "value_4": "Atención al detalle"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Bases de datos",
+    "soft": "Habilidades blandas",
+    "teamwork": "Trabajo en equipo",
+    "communication": "Comunicación",
+    "leadership": "Liderazgo",
+    "problem_solving": "Resolución de problemas"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Algunos de los proyectos en los que he trabajado",
+    "view_demo": "Ver demo",
+    "view_code": "Ver código",
+    "in_production": "En producción",
+    "personal": "Personal"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "subtitle": "Mi trayectoria profesional",
+    "exp1_title": "Desarrollador Frontend — Empresa 1",
+    "exp1_desc": "Desarrollé interfaces web con React y TypeScript. Mejoré el rendimiento de la app un 30% y lideré la migración al nuevo sistema de diseño.",
+    "exp2_title": "Desarrollador Full Stack — Empresa 2",
+    "exp2_desc": "Construí APIs REST con Node.js y NestJS. Colaboré en la arquitectura de microservicios y mantenimiento de bases de datos PostgreSQL.",
+    "exp3_title": "Desarrollador Backend — Empresa 3",
+    "exp3_desc": "Diseñé e implementé servicios en Python. Optimicé consultas SQL y automaticé procesos internos reduciendo tiempos operativos.",
+    "exp4_title": "Desarrollador Junior — Empresa 4",
+    "exp4_desc": "Primer rol profesional. Participé en el desarrollo de módulos con Angular, integración de APIs externas y soporte técnico al equipo."
+  },
+  "tech": {
+    "title": "Tecnologías",
+    "subtitle": "Herramientas con las que trabajo"
+  },
+  "contact": {
+    "title": "Contáctame",
+    "subtitle": "¿Tienes un proyecto en mente? ¡Hablemos!",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado con éxito!",
+    "error": "Hubo un error. Intenta de nuevo."
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "made_with": "Hecho con"
+  }
+}

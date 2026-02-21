@@ -1,0 +1,76 @@
+{
+  "navbar": {
+    "home": "🏠 Home",
+    "about": "🙋‍♂️ About",
+    "projects": "🚀 Projects",
+    "skills": "⚡ Skills",
+    "experience": "💼 Experience",
+    "contact": "📬 Contact"
+  },
+  "hero": {
+    "greeting": "👋 Welcome to my portfolio",
+    "subtitle": "🚀 Software Engineer · Passionate about building unique and memorable digital experiences.",
+    "cta_projects": "View projects",
+    "cta_contact": "Contact me",
+    "marquee": "✨ · Juan David Ramírez · Software Engineer · Passionate about technology 🚀"
+  },
+  "about": {
+    "title": "About me",
+    "description": "I'm a software developer passionate about building products that impact people. I specialize in full-stack web development with React, Node.js and TypeScript.",
+    "values_title": "What defines me",
+    "value_1": "Clean and scalable code",
+    "value_2": "Continuous learning",
+    "value_3": "Collaboration and teamwork",
+    "value_4": "Attention to detail"
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Databases",
+    "soft": "Soft skills",
+    "teamwork": "Teamwork",
+    "communication": "Communication",
+    "leadership": "Leadership",
+    "problem_solving": "Problem solving"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Some of the projects I've worked on",
+    "view_demo": "View demo",
+    "view_code": "View code",
+    "in_production": "In production",
+    "personal": "Personal"
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My professional journey",
+    "exp1_title": "Frontend Developer — Company 1",
+    "exp1_desc": "Built web interfaces with React and TypeScript. Improved app performance by 30% and led the migration to the new design system.",
+    "exp2_title": "Full Stack Developer — Company 2",
+    "exp2_desc": "Built REST APIs with Node.js and NestJS. Collaborated on microservices architecture and PostgreSQL database maintenance.",
+    "exp3_title": "Backend Developer — Company 3",
+    "exp3_desc": "Designed and implemented services in Python. Optimized SQL queries and automated internal processes, reducing operational times.",
+    "exp4_title": "Junior Developer — Company 4",
+    "exp4_desc": "First professional role. Developed modules with Angular, integrated external APIs and provided technical support to the team."
+  },
+  "tech": {
+    "title": "Technologies",
+    "subtitle": "Tools I work with"
+  },
+  "contact": {
+    "title": "Contact me",
+    "subtitle": "Have a project in mind? Let's talk!",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Something went wrong. Please try again."
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "made_with": "Made with"
+  }
+}
