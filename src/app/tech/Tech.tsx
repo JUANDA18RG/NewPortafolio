@@ -89,7 +89,10 @@ export default function Tech() {
     },
   ];
   return (
-    <div className="w-full py-20 relative flex items-center justify-center bg-principal">
+    <div
+      id="skills"
+      className="w-full py-20 relative flex items-center justify-center bg-principal scroll-mt-20 md:scroll-mt-36"
+    >
       {/* Fondo interactivo */}
       <div className="absolute inset-0 w-full h-full">
         <GridScan

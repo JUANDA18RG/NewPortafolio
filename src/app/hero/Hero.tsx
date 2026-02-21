@@ -6,7 +6,10 @@ export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full h-screen relative flex items-center justify-center pt-20">
+    <div
+      id="home"
+      className="w-full h-screen relative flex items-center justify-center pt-20 scroll-mt-20 md:scroll-mt-36"
+    >
       <div className="absolute inset-0 w-full h-full z-20">
         <FloatingLines
           enabledWaves={["top", "middle", "bottom"]}
@@ -22,7 +25,7 @@ export default function Hero() {
 
       {/* Texto de presentación centrado */}
       <div className="absolute inset-0 w-full h-full flex flex-col items-center justify-center z-30 pointer-events-none gap-4 px-6">
-        <span className="text-lg md:text-xl text-white/60 tracking-widest uppercase font-semibold">
+        <span className="text-lg md:text-xl text-white/60 tracking-widest uppercase font-semibold text-center">
           {t("hero.greeting")}
         </span>
         <h1 className="text-5xl md:text-7xl font-extrabold text-center text-white drop-shadow-lg leading-tight">

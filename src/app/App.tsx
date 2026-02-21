@@ -1,9 +1,10 @@
 import Navbar from "./navbar/Navbar";
 import Experience from "./experience/Experience";
 import Hero from "./hero/Hero";
+import AboutMe from "./aboutMe/AboutMe";
 import ClickSpark from "../components/layout/ClickSpark";
 import Tech from "./tech/Tech";
-import ContactUs from "./ContactUs/ContactUs";
+import ContactUs from "./contactUs/ContactUs";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         {/* SECCIONES CON SCROLL */}
         <div className="w-full">
           <Hero />
+          <AboutMe />
           <Tech />
           <Experience />
           <ContactUs />

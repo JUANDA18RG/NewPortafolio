@@ -14,7 +14,10 @@ export default function Experience() {
   }));
 
   return (
-    <div className="w-full h-screen relative flex items-center justify-center">
+    <div
+      id="experience"
+      className="w-full h-screen relative flex items-center justify-center scroll-mt-20 md:scroll-mt-36"
+    >
       <div className="absolute inset-0 w-full h-full -z-10">
         <LetterGlitch
           glitchColors={["#2D2D2D", "#8E24AA", "#F5F5F5"]}

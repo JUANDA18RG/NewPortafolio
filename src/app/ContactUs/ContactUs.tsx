@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 import StickerPeel from "../../components/layout/StickerPeel";
 import Aurora from "../../components/layout/Aurora";
 import Logo from "../../assets/logo.png";
@@ -6,11 +7,13 @@ import Gmail from "../../assets/gmail.png";
 
 export default function ContactUs() {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const { t } = useTranslation();
 
   return (
     <div
       ref={sectionRef}
-      className="w-full min-h-screen relative flex items-center justify-center overflow-hidden"
+      id="contact"
+      className="w-full min-h-screen relative flex items-center justify-center overflow-hidden scroll-mt-20 md:scroll-mt-36"
     >
       {/* Aurora invertida en colores */}
       <div className="absolute inset-0 w-full h-full -z-10">
@@ -57,10 +60,10 @@ export default function ContactUs() {
           {/* Encabezado */}
           <div className="mb-8 text-center">
             <h2 className="text-4xl font-extrabold text-complemento drop-shadow-lg mb-2">
-              Hablemos 👋
+              {t("contact.heading")}
             </h2>
             <p className="text-complemento/70 text-base font-light">
-              ¿Tienes un proyecto en mente? Escríbeme y lo hacemos realidad.
+              {t("contact.tagline")}
             </p>
           </div>
 
@@ -78,13 +81,13 @@ export default function ContactUs() {
             {/* Nombre */}
             <div className="flex flex-col gap-1">
               <label className="text-complemento/80 text-sm font-semibold tracking-wide">
-                Nombre
+                {t("contact.name")}
               </label>
               <input
                 name="name"
                 required
                 type="text"
-                placeholder="Juan Pérez"
+                placeholder={t("contact.placeholder_name")}
                 className="bg-white/10 border border-white/25 rounded-xl px-4 py-3 text-complemento placeholder-complemento/40 outline-none focus:border-secundario focus:ring-2 focus:ring-secundario/30 transition-all"
               />
             </div>
@@ -92,13 +95,13 @@ export default function ContactUs() {
             {/* Asunto */}
             <div className="flex flex-col gap-1">
               <label className="text-complemento/80 text-sm font-semibold tracking-wide">
-                Asunto
+                {t("contact.subject")}
               </label>
               <input
                 name="subject"
                 required
                 type="text"
-                placeholder="Proyecto freelance · Colaboración · ..."
+                placeholder={t("contact.placeholder_subject")}
                 className="bg-white/10 border border-white/25 rounded-xl px-4 py-3 text-complemento placeholder-complemento/40 outline-none focus:border-secundario focus:ring-2 focus:ring-secundario/30 transition-all"
               />
             </div>
@@ -106,13 +109,13 @@ export default function ContactUs() {
             {/* Mensaje */}
             <div className="flex flex-col gap-1">
               <label className="text-complemento/80 text-sm font-semibold tracking-wide">
-                Mensaje
+                {t("contact.message")}
               </label>
               <textarea
                 name="message"
                 required
                 rows={4}
-                placeholder="Cuéntame sobre tu idea..."
+                placeholder={t("contact.placeholder_message")}
                 className="bg-white/10 border border-white/25 rounded-xl px-4 py-3 text-complemento placeholder-complemento/40 outline-none focus:border-secundario focus:ring-2 focus:ring-secundario/30 transition-all resize-none"
               />
             </div>
@@ -122,7 +125,7 @@ export default function ContactUs() {
               type="submit"
               className="mt-2 w-full bg-secundario hover:bg-secundario/80 text-complemento font-bold py-3 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
             >
-              Enviar mensaje ✉️
+              {t("contact.send")}
             </button>
           </form>
         </div>
