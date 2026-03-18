@@ -56,14 +56,15 @@
   "experience": {
     "title": "Experience",
     "subtitle": "My professional journey",
-    "exp1_title": "Frontend Developer — Company 1",
-    "exp1_desc": "Built web interfaces with React and TypeScript. Improved app performance by 30% and led the migration to the new design system.",
-    "exp2_title": "Full Stack Developer — Company 2",
-    "exp2_desc": "Built REST APIs with Node.js and NestJS. Collaborated on microservices architecture and PostgreSQL database maintenance.",
-    "exp3_title": "Backend Developer — Company 3",
-    "exp3_desc": "Designed and implemented services in Python. Optimized SQL queries and automated internal processes, reducing operational times.",
-    "exp4_title": "Junior Developer — Company 4",
-    "exp4_desc": "First professional role. Developed modules with Angular, integrated external APIs and provided technical support to the team."
+
+    "exp1_title": "Technology Intern — Contento Latam (Subbi)",
+    "exp1_desc": "Completed my professional internship in the technology area, collaborating on software development tasks and supporting internal platforms. Worked with modern frameworks, modular architecture and team-based development practices.",
+
+    "exp2_title": "Full Stack Developer — Zero",
+    "exp2_desc": "Participated in the development of web applications, contributing to both frontend and backend components. Focused on building functional interfaces, integrating APIs and improving application structure.",
+
+    "exp3_title": "Technology Support & Systems Assistant — Colegio Talentos Tuluá",
+    "exp3_desc": "Provided technical support and assisted in technology-related tasks within the institution, helping maintain systems, solving technical issues and supporting digital tools used in academic environments."
   },
   "tech": {
     "title": "Technologies",

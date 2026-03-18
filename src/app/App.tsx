@@ -5,6 +5,7 @@ import AboutMe from "./aboutMe/AboutMe";
 import ClickSpark from "../components/layout/ClickSpark";
 import Tech from "./tech/Tech";
 import ContactUs from "./contactUs/ContactUs";
+import Proyects from "./proyects/Proyects";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <div className="w-full">
           <Hero />
           <AboutMe />
+          <Proyects />
           <Tech />
           <Experience />
           <ContactUs />

@@ -56,14 +56,15 @@
   "experience": {
     "title": "Experiencia",
     "subtitle": "Mi trayectoria profesional",
-    "exp1_title": "Desarrollador Frontend — Empresa 1",
-    "exp1_desc": "Desarrollé interfaces web con React y TypeScript. Mejoré el rendimiento de la app un 30% y lideré la migración al nuevo sistema de diseño.",
-    "exp2_title": "Desarrollador Full Stack — Empresa 2",
-    "exp2_desc": "Construí APIs REST con Node.js y NestJS. Colaboré en la arquitectura de microservicios y mantenimiento de bases de datos PostgreSQL.",
-    "exp3_title": "Desarrollador Backend — Empresa 3",
-    "exp3_desc": "Diseñé e implementé servicios en Python. Optimicé consultas SQL y automaticé procesos internos reduciendo tiempos operativos.",
-    "exp4_title": "Desarrollador Junior — Empresa 4",
-    "exp4_desc": "Primer rol profesional. Participé en el desarrollo de módulos con Angular, integración de APIs externas y soporte técnico al equipo."
+
+    "exp1_title": "Practicante de Tecnología — Contento Latam (Subbi)",
+    "exp1_desc": "Realicé mi práctica profesional en el área de tecnología, colaborando en tareas de desarrollo de software y apoyo a plataformas internas. Trabajé con frameworks modernos, arquitectura modular y metodologías de trabajo en equipo.",
+
+    "exp2_title": "Desarrollador Full Stack — Zero",
+    "exp2_desc": "Participé en el desarrollo de aplicaciones web, contribuyendo tanto en el frontend como en el backend. Me enfoqué en la creación de interfaces funcionales, integración de APIs y mejora de la estructura de las aplicaciones.",
+
+    "exp3_title": "Soporte Tecnológico — Colegio Talentos Tuluá",
+    "exp3_desc": "Brindé apoyo en el área tecnológica de la institución, ayudando en el mantenimiento de sistemas, solución de problemas técnicos y soporte a herramientas digitales utilizadas en el entorno académico."
   },
   "tech": {
     "title": "Tecnologías",

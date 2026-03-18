@@ -25,7 +25,7 @@ export default function LanguageToggle() {
     <button
       onClick={toggle}
       title={isSpanish ? "Switch to English" : "Cambiar a Español"}
-      className="group relative flex items-center gap-2 px-3 h-10 rounded-full transition-all duration-300 hover:scale-105 bg-complemento text-principal shadow-md cursor-pointer select-none overflow-hidden border-2 border-secundario/30"
+      className="group relative flex items-center gap-2 px-3 h-10 rounded-full transition-all duration-300 hover:scale-105 bg-complemento text-principal shadow-md cursor-pointer select-none overflow-hidden border-2 border-secundario/30 cursor-target"
     >
       {/* Estado normal: idioma actual */}
       <span className="flex items-center gap-2 transition-all duration-300 group-hover:-translate-y-8 group-hover:opacity-0">

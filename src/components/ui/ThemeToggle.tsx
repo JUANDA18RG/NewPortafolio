@@ -1,11 +1,11 @@
 export default function ThemeToggle() {
   return (
     <a
-      href="https://github.com/tu-usuario"
+      href="https://github.com/JUANDA18RG"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Ver perfil de GitHub"
-      className="relative w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 bg-complemento text-principal shadow-md cursor-pointer"
+      className="relative w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 bg-complemento text-principal shadow-md cursor-pointer cursor-target"
     >
       {/* Ícono GitHub */}
       <svg

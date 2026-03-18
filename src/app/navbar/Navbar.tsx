@@ -38,7 +38,7 @@ export default function Navbar() {
     <>
       <div className="flex items-center justify-between w-full fixed top-0 left-0 z-50 p-0">
         {/* Logo */}
-        <div className="shrink-0 w-20 h-20 md:w-36 md:h-36">
+        <div className="shrink-0 w-20 h-20 md:w-36 md:h-36 relative cursor-target m-1">
           <MetallicPaint
             imageSrc={Logo}
             seed={10}
@@ -86,7 +86,7 @@ export default function Navbar() {
           <ThemeToggle />
           <button
             onClick={() => setMenuOpen((o) => !o)}
-            className="p-2 rounded-xl border-2 border-secundario/40 backdrop-blur-md text-white hover:bg-secundario/20 transition-colors"
+            className="p-2 rounded-xl border-2 border-secundario/40 backdrop-blur-md text-white hover:bg-secundario/20 transition-colors cursor-target"
             aria-label="Toggle menu"
           >
             {menuOpen ? <X size={22} /> : <Menu size={22} />}

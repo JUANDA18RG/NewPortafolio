@@ -1244,12 +1244,44 @@ interface InfiniteMenuProps {
   scale?: number;
 }
 
+interface TooltipState {
+  text: string;
+  x: number;
+  y: number;
+}
+
 const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [], scale = 1.0 }) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(
     null,
   ) as MutableRefObject<HTMLCanvasElement | null>;
   const [activeItem, setActiveItem] = useState<MenuItem | null>(null);
   const [isMoving, setIsMoving] = useState<boolean>(false);
+  const [tooltip, setTooltip] = useState<TooltipState | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const showTooltip = (e: React.MouseEvent, text: string) => {
+    const container = containerRef.current;
+    if (!container) return;
+    const rect = container.getBoundingClientRect();
+    setTooltip({
+      text,
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    });
+  };
+
+  const moveTooltip = (e: React.MouseEvent) => {
+    const container = containerRef.current;
+    if (!container || !tooltip) return;
+    const rect = container.getBoundingClientRect();
+    setTooltip((prev) =>
+      prev
+        ? { ...prev, x: e.clientX - rect.left, y: e.clientY - rect.top }
+        : null,
+    );
+  };
+
+  const hideTooltip = () => setTooltip(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -1287,17 +1319,46 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [], scale = 1.0 }) => {
   }, [items, scale]);
 
   return (
-    <div style={{ position: "relative", width: "100%", height: "100%" }}>
+    <div
+      ref={containerRef}
+      style={{ position: "relative", width: "100%", height: "100%" }}
+    >
       <canvas id="infinite-grid-menu-canvas" ref={canvasRef} />
 
       {activeItem && (
-        <>
-          <div className={`face-info-card ${isMoving ? "inactive" : "active"}`}>
-            <h2 className="face-title">{activeItem.title}</h2>
-            <hr className="face-divider" />
-            <p className="face-description">{activeItem.description}</p>
-          </div>
-        </>
+        <div
+          className={`face-info-card ${isMoving ? "inactive" : "active cursor-target"}`}
+        >
+          <h2
+            className="face-title"
+            onMouseEnter={(e) => showTooltip(e, activeItem.title)}
+            onMouseMove={moveTooltip}
+            onMouseLeave={hideTooltip}
+          >
+            {activeItem.title}
+          </h2>
+          <hr className="face-divider" />
+          <p
+            className="face-description"
+            onMouseEnter={(e) => showTooltip(e, activeItem.description)}
+            onMouseMove={moveTooltip}
+            onMouseLeave={hideTooltip}
+          >
+            {activeItem.description}
+          </p>
+        </div>
+      )}
+
+      {tooltip && (
+        <div
+          className="face-tooltip"
+          style={{
+            left: tooltip.x,
+            top: tooltip.y,
+          }}
+        >
+          {tooltip.text}
+        </div>
       )}
     </div>
   );

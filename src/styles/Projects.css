@@ -1,0 +1,66 @@
+/*
+  Projects.css — solo contiene lo que Tailwind no puede expresar:
+  pseudo-elementos ::before y ::after de las tarjetas.
+*/
+
+/* Overlay de gradiente en hover */
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(142, 36, 170, 0.1) 0%,
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Línea brillante en el borde superior en hover */
+.project-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15%;
+  right: 15%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #8e24aa,
+    #ce93d8,
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.project-card:hover::before,
+.project-card:hover::after {
+  opacity: 1;
+}
+
+/* Asegurar que el contenido quede sobre los pseudo-elementos */
+.project-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

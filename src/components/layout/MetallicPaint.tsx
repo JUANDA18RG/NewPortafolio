@@ -551,5 +551,5 @@ export default function MetallicPaint({
     };
   }, [ready, textureReady]);
 
-  return <canvas ref={canvasRef} className="paint-container" />;
+  return <canvas ref={canvasRef} className="paint-container " />;
 }

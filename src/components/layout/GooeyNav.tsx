@@ -192,7 +192,12 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
       <nav>
         <ul ref={navRef}>
           {items.map((item, index) => (
-            <li key={index} className={activeIndex === index ? "active" : ""}>
+            <li
+              key={index}
+              className={
+                activeIndex === index ? "active cursor-target" : "cursor-target"
+              }
+            >
               <a
                 href={item.href}
                 onClick={(e) => handleClick(e, index)}
