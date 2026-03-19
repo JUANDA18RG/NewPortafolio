@@ -1,4 +1,5 @@
-import { FC, useRef, useState, useEffect, MutableRefObject } from "react";
+import { useRef, useState, useEffect } from "react";
+import type { FC, MutableRefObject } from "react";
 import { mat4, quat, vec2, vec3 } from "gl-matrix";
 import "../../styles/InfiniteMenu.css";
 
@@ -711,6 +712,10 @@ class InfiniteGridMenu {
   private gl: WebGL2RenderingContext | null = null;
   private discProgram: WebGLProgram | null = null;
   private discVAO: WebGLVertexArrayObject | null = null;
+  private canvas!: HTMLCanvasElement;
+  private items!: MenuItem[];
+  private onActiveItemChange!: ActiveItemCallback;
+  private onMovementChange!: MovementChangeCallback;
   private discBuffers!: {
     vertices: Float32Array;
     indices: Uint16Array;
@@ -781,13 +786,17 @@ class InfiniteGridMenu {
   public scaleFactor = 1.0;
 
   constructor(
-    private canvas: HTMLCanvasElement,
-    private items: MenuItem[],
-    private onActiveItemChange: ActiveItemCallback,
-    private onMovementChange: MovementChangeCallback,
+    canvas: HTMLCanvasElement,
+    items: MenuItem[],
+    onActiveItemChange: ActiveItemCallback,
+    onMovementChange: MovementChangeCallback,
     onInit?: InitCallback,
     scale: number = 1.0,
   ) {
+    this.canvas = canvas;
+    this.items = items;
+    this.onActiveItemChange = onActiveItemChange;
+    this.onMovementChange = onMovementChange;
     this.scaleFactor = scale;
     this.camera.position[2] = 3 * scale;
     this.init(onInit);

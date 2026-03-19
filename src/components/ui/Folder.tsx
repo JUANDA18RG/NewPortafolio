@@ -75,10 +75,7 @@ const Folder: React.FC<FolderProps> = ({
     });
   };
 
-  const handlePaperMouseLeave = (
-    e: React.MouseEvent<HTMLDivElement, MouseEvent>,
-    index: number,
-  ) => {
+  const handlePaperMouseLeave = (index: number) => {
     setPaperOffsets((prev) => {
       const newOffsets = [...prev];
       newOffsets[index] = { x: 0, y: 0 };
@@ -110,7 +107,7 @@ const Folder: React.FC<FolderProps> = ({
               key={i}
               className={`paper paper-${i + 1}`}
               onMouseMove={(e) => handlePaperMouseMove(e, i)}
-              onMouseLeave={(e) => handlePaperMouseLeave(e, i)}
+              onMouseLeave={() => handlePaperMouseLeave(i)}
               style={
                 open
                   ? ({
