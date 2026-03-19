@@ -13,7 +13,7 @@ import {
   FiLayers,
   FiLayout,
 } from "react-icons/fi";
-import "../../styles/carousel.css";
+import "../../styles/Carousel.css";
 
 export interface CarouselItem {
   title: string;
