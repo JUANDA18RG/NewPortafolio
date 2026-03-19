@@ -6,18 +6,18 @@ import "../../styles/Projects.css";
 
 const statusConfig: Record<
   Project["status"],
-  { label: string; className: string }
+  { labelKey: string; className: string }
 > = {
   production: {
-    label: "En producción",
+    labelKey: "projects.in_production",
     className: "bg-green-500/10 border border-green-500/30 text-green-400",
   },
   personal: {
-    label: "Personal",
+    labelKey: "projects.personal",
     className: "bg-blue-500/10 border border-blue-500/30 text-blue-400",
   },
   wip: {
-    label: "En progreso",
+    labelKey: "projects.in_progress",
     className: "bg-orange-500/10 border border-orange-500/30 text-orange-400",
   },
 };
@@ -62,9 +62,9 @@ function Proyects() {
         {/* Header */}
         <div className="flex flex-col items-center gap-3 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#f5f5f5] tracking-tight leading-tight">
-            Lo que he{" "}
+            {t("projects.heading_prefix", "Lo que he")}{" "}
             <span className="bg-linear-to-r from-[#8e24aa] to-[#ce93d8] bg-clip-text text-transparent">
-              construido
+              {t("projects.heading_highlight", "construido")}
             </span>
           </h2>
           <p className="text-sm text-[#f5f5f5]/50 max-w-md">
@@ -95,10 +95,13 @@ function Proyects() {
               {/* Info */}
               <div className="flex flex-col gap-2 flex-1">
                 <h3 className="text-base font-bold text-[#f5f5f5] leading-snug">
-                  {project.title}
+                  {t(`projects.items.${project.id}.title`, project.title)}
                 </h3>
                 <p className="text-[13px] text-[#f5f5f5]/55 leading-relaxed flex-1">
-                  {project.description}
+                  {t(
+                    `projects.items.${project.id}.description`,
+                    project.description,
+                  )}
                 </p>
 
                 {/* Tags */}
@@ -118,7 +121,10 @@ function Proyects() {
                   className={`inline-flex items-center gap-1.5 text-[10px] font-bold tracking-[0.08em] uppercase px-2.5 py-1 rounded-full w-fit mt-2 ${statusConfig[project.status].className}`}
                 >
                   <span className="w-1 h-1 rounded-full bg-current" />
-                  {statusConfig[project.status].label}
+                  {t(
+                    statusConfig[project.status].labelKey,
+                    statusConfig[project.status].labelKey,
+                  )}
                 </span>
               </div>
             </div>

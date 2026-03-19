@@ -47,11 +47,48 @@
   },
   "projects": {
     "title": "Proyectos",
+    "heading_prefix": "Lo que he",
+    "heading_highlight": "construido",
     "subtitle": "Algunos de los proyectos en los que he trabajado",
     "view_demo": "Ver demo",
     "view_code": "Ver código",
     "in_production": "En producción",
-    "personal": "Personal"
+    "personal": "Personal",
+    "in_progress": "En progreso",
+    "items": {
+      "1": {
+        "title": "MiPlante",
+        "description": "Sistema de créditos para compras según estrato y tipo de persona."
+      },
+      "2": {
+        "title": "Contento V2",
+        "description": "Plataforma para impulsar e-commerce: personalización de tiendas, categorías, marcas y gestión de productos para vender de forma profesional."
+      },
+      "3": {
+        "title": "Sistema de Entrevistas con IA",
+        "description": "Plataforma de entrevistas donde la IA evalúa habilidades de programación y conocimientos con opción múltiple; permite crear entrevistas por área."
+      },
+      "4": {
+        "title": "Tablero Canva con IA",
+        "description": "Tablero inteligente que, a partir de una meta o tarea, genera un plan para iniciar, organizar rutina y priorizar actividades."
+      },
+      "5": {
+        "title": "ERP Clínico con IA",
+        "description": "ERP para una clínica de renombre, enfocado en automatizar procesos obsoletos y optimizarlos con inteligencia artificial."
+      },
+      "6": {
+        "title": "Nuevo Portafolio",
+        "description": "Portafolio personal moderno con cambio de idioma, animaciones avanzadas y una experiencia interactiva cuidada."
+      },
+      "7": {
+        "title": "Portfolio para Deportistas",
+        "description": "Plataforma tipo LinkedIn para deportistas, donde pueden mostrar habilidades, logros y perfil deportivo. Actualmente en desarrollo."
+      },
+      "8": {
+        "title": "DropiAdmin",
+        "description": "Proyecto para ayudar a usuarios a validar si un pedido es viable para venta por Dropi, hacer seguimiento de guías y enviar notificaciones."
+      }
+    }
   },
   "experience": {
     "title": "Experiencia",

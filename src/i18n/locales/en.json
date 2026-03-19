@@ -47,11 +47,48 @@
   },
   "projects": {
     "title": "Projects",
+    "heading_prefix": "What I've",
+    "heading_highlight": "built",
     "subtitle": "Some of the projects I've worked on",
     "view_demo": "View demo",
     "view_code": "View code",
     "in_production": "In production",
-    "personal": "Personal"
+    "personal": "Personal",
+    "in_progress": "In progress",
+    "items": {
+      "1": {
+        "title": "MiPlante",
+        "description": "Credit system for purchases based on socioeconomic level and customer type."
+      },
+      "2": {
+        "title": "Contento V2",
+        "description": "Platform to boost e-commerce with store customization, categories, brands, and product management for professional selling."
+      },
+      "3": {
+        "title": "AI Interview System",
+        "description": "Interview platform where AI evaluates programming skills and multiple-choice knowledge, and allows creating interviews by area."
+      },
+      "4": {
+        "title": "AI Canvas Board",
+        "description": "Smart board that turns a goal or task into a starting plan, organizing routines and prioritizing activities."
+      },
+      "5": {
+        "title": "AI Clinical ERP",
+        "description": "ERP for a renowned clinic, focused on automating obsolete processes and optimizing them with artificial intelligence."
+      },
+      "6": {
+        "title": "New Portfolio",
+        "description": "Modern personal portfolio with language switching, advanced animations, and a polished interactive experience."
+      },
+      "7": {
+        "title": "Athlete Portfolio Platform",
+        "description": "LinkedIn-style platform for athletes where they can showcase skills, achievements, and their sports profile. Currently in development."
+      },
+      "8": {
+        "title": "DropiAdmin",
+        "description": "Project to help users validate whether an order is viable for Dropi sales, track shipping guides, and send user notifications."
+      }
+    }
   },
   "experience": {
     "title": "Experience",
