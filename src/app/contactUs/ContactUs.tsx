@@ -2,8 +2,8 @@ import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import StickerPeel from "../../components/layout/StickerPeel";
 import Aurora from "../../components/layout/Aurora";
-import Logo from "../../assets/logo.png";
-import Gmail from "../../assets/gmail.png";
+import Logo from "../../assets/Logo.png";
+import Gmail from "../../assets/Gmail.png";
 
 export default function ContactUs() {
   const sectionRef = useRef<HTMLDivElement>(null);
