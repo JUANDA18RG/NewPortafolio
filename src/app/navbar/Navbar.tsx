@@ -3,7 +3,7 @@ import GooeyNav from "../../components/layout/GooeyNav";
 import MetallicPaint from "../../components/layout/MetallicPaint";
 import ThemeToggle from "../../components/ui/ThemeToggle";
 import LanguageToggle from "../../components/ui/LanguageToggle";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/Logo.png";
 import RawItems from "../../data/Navigation.json";
 import { useTranslation } from "react-i18next";
 import { Menu, X } from "lucide-react";
